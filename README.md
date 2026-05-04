@@ -63,15 +63,6 @@ This repository may include implementations related to:
 
 - Practice Problems & Real-world Examples
 
-## 👨‍🎓 Intended Audience
-
-This repository is useful for:
-
-- Students learning Machine Learning
-- Beginners in Python and Data Science
-- Aspiring Data Scientists & ML Engineers
-- Anyone preparing for interviews or looking for quick revision
-
 ## 🚀 Getting Started
 
 1. Clone the repository
@@ -79,8 +70,11 @@ This repository is useful for:
 3. Run the notebooks or scripts
 4. Experiment with datasets and modify implementations
 
-## 📌 Note
+## 👨‍🎓 Intended Audience
 
-This repository focuses on **learning by doing**, so the implementations prioritize clarity and understanding over optimization.
+This repository is useful for:
 
-Contributions, suggestions, and improvements are always welcome!
+- Students learning Machine Learning
+- Beginners in Python and Data Science
+- Aspiring Data Scientists & ML Engineers
+
