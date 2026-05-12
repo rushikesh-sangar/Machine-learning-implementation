@@ -107,7 +107,7 @@ mean_total = np.mean(dataset.values)
 SST = np.sum((dataset.values - mean_total) ** 2)
 print(SST)
 
-# R-Squared
+# R-squared
 r_squared = 1 - (SSR/SST)
 print(r_squared)
 
