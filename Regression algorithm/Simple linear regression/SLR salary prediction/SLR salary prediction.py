@@ -15,18 +15,18 @@ import os
 dataset = pd.read_csv(r'D:\Full Stack Data Science With Gen AI & Agentic AI Notes\Notes\May\4 May\Salary data.csv')
 
 # Split the data into independent and dependent variables
-x = dataset.iloc[:, :-1]
+X = dataset.iloc[:, :-1]
 y = dataset.iloc[:, -1]
 
 # Split the dataset into training and testing sets (80% - 20%)
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 
 # Training the model
 regressor = LinearRegression()
-regressor.fit(x_train, y_train)
+regressor.fit(X_train, y_train)
 
 # Predict the test set
-y_pred = regressor.predict(x_test)
+y_pred = regressor.predict(X_test)
 print(y_pred)
 
 # Comparison between test set and predicted set for dependent variable 
@@ -34,16 +34,16 @@ comparison = pd.DataFrame({'Actual':y_test, 'Predicted':y_pred})
 print(comparison)
 
 # Visualize the training set
-plt.scatter(x_train, y_train, color = 'red')
-plt.plot(x_train, regressor.predict(x_train), color = 'blue')
+plt.scatter(X_train, y_train, color = 'red')
+plt.plot(X_train, regressor.predict(X_train), color = 'blue')
 plt.title('Salary vs Experience (Training set)')
 plt.xlabel('Years of experience')
 plt.ylabel('Salary')
 plt.show()
 
 # Visualize the test set
-plt.scatter(x_test, y_test, color = 'red')
-plt.plot(x_train, regressor.predict(x_train), color = 'blue')
+plt.scatter(X_test, y_test, color = 'red')
+plt.plot(X_train, regressor.predict(X_train), color = 'blue')
 plt.title('Salary vs Experience (Test set)')
 plt.xlabel('Years of experience')
 plt.ylabel('Salary')
@@ -127,15 +127,15 @@ r_squared = 1 - (SSR/SST)
 print(r_squared)
 
 # Bias score
-bias = regressor.score(x_train, y_train)
+bias = regressor.score(X_train, y_train)
 print(f'Training score: {bias:.2f}')
 
 # Variance score
-variance = regressor.score(x_test, y_test)
+variance = regressor.score(X_test, y_test)
 print(f'Testing score (R^2): {variance:.2f}')
 
 # Mean squared error
-train_mse = mean_squared_error(y_train, regressor.predict(x_train))
+train_mse = mean_squared_error(y_train, regressor.predict(X_train))
 print(f'Training MSE: {train_mse:.2f}')
 test_mse = mean_squared_error(y_test, y_pred)
 print(f'Test MSE: {test_mse:.2f}')
