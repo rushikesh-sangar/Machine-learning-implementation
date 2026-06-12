@@ -1,4 +1,4 @@
-# Machine Learning Implementation
+# Machine learning implementation
 
 This repository contains Python implementations of core **Machine Learning algorithms** with a strong focus on **practical coding examples** rather than heavy mathematical theory.
 
