@@ -1,6 +1,6 @@
 # Machine learning implementation
 
-This repository contains Python implementations of core **Machine learning algorithms** with a strong focus on **practical coding examples** rather than heavy mathematical theory.
+This repository contains Python implementations of core Machine learning algorithms with a strong focus on **practical coding examples** rather than heavy mathematical theory.
 
 It is designed to help learners understand machine learning concepts through hands-on implementation using Python notebooks and scripts.
 
